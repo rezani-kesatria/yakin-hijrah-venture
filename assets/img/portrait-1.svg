@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 400" role="img" aria-label="Portrait placeholder">
+  <defs>
+    <linearGradient id="bg1" x1="0" y1="0" x2="0.35" y2="1">
+      <stop offset="0" stop-color="#1D2050"/>
+      <stop offset="1" stop-color="#0B0D26"/>
+    </linearGradient>
+    <clipPath id="frame1"><rect width="300" height="400"/></clipPath>
+  </defs>
+  <rect width="300" height="400" fill="url(#bg1)"/>
+  <g clip-path="url(#frame1)">
+    <!-- Concentric arcs, echoing the circular logo mark -->
+    <g fill="none" stroke="#F1F1F6" stroke-opacity="0.06" stroke-width="1">
+      <circle cx="150" cy="150" r="118"/>
+      <circle cx="150" cy="150" r="158"/>
+      <circle cx="150" cy="150" r="198"/>
+    </g>
+    <!-- Shoulders meet the head: ellipse top (cy - ry) sits just above the
+         head's lower edge, so the silhouette reads as one figure. -->
+    <ellipse cx="150" cy="392" rx="116" ry="186" fill="#2E3266" fill-opacity="0.92"/>
+    <circle cx="150" cy="158" r="54" fill="#2E3266" fill-opacity="0.92"/>
+  </g>
+</svg>

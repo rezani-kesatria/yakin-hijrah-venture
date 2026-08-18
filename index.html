@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="en-MY">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Yakin Hijrah Ventures — Takaful Protection &amp; Professional Training for Malaysian SMEs</title>
+<meta name="description" content="Shariah-compliant takaful protection and professional development programmes, brought within reach of Malaysian SMEs by practitioners from the country's largest insurers and banks.">
+<link rel="icon" href="assets/img/yhv-mark.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@400..700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css?v=47">
+<script>
+(function (d) {
+  d.documentElement.classList.add("js");
+  /* Failsafe: if main.js never loads, reveal everything rather than
+     leaving the page blank. Runs long enough after load for the intended
+     animation to play first when the script is available. */
+  window.__yhvRevealFailsafe = setTimeout(function () {
+    /* If GSAP already took over, it owns visibility - leave it alone. */
+    if (d.documentElement.classList.contains("gsap")) return;
+    var els = d.querySelectorAll("[data-reveal]:not(.is-visible)");
+    for (var i = 0; i < els.length; i++) els[i].classList.add("is-visible");
+  }, 4000);
+})(document);
+</script>
+</head>
+<body>
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="header">
+  <div class="wrap header__inner">
+    <a class="brand" href="index.html" aria-label="Yakin Hijrah Ventures — home">
+      <img class="brand__mark" src="assets/img/yhv-mark.svg" alt="" width="36" height="36">
+      <span class="brand__name">Yakin Hijrah<span>Ventures</span></span>
+    </a>
+
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav" aria-label="Menu">
+      <span></span>
+    </button>
+
+    <nav class="nav" id="nav" aria-label="Primary">
+      <a href="about.html">About</a>
+      <a href="takaful.html">Takaful</a>
+      <a href="training.html">Training</a>
+      <a href="team.html">Team</a>
+      <a href="contact.html">Contact</a>
+      <a class="btn btn--solid" href="contact.html">Request a proposal</a>
+    </nav>
+
+    <a class="btn btn--soft header__cta" href="contact.html">Request a proposal</a>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- ============================ HERO ============================ -->
+  <!-- Structure follows the reference exactly: centred headline / sub / button,
+       then six bottom-aligned blocks with staggered tops (95 77 82 75 100 95),
+       each carrying a cut-out figure that overflows its block.
+       Copy here is placeholder — see content/home-content.md. -->
+  <section class="hero">
+    <div class="wrap">
+      <h1 class="hero__title" data-reveal>
+        <span class="t-lead">Protection and Training for</span>
+        <span class="t-pay">Every Malaysian Business</span>
+      </h1>
+
+      <p class="hero__sub" data-reveal style="--delay:80ms">
+        At <strong>Yakin Hijrah Ventures</strong>, we are committed to delivering
+        Shariah-compliant protection and professional training tailored to your business.
+      </p>
+
+      <div class="hero__actions" data-reveal style="--delay:160ms">
+        <a class="btn btn--hero" href="contact.html">Schedule a Meeting</a>
+      </div>
+
+      <!-- Six blocks stay as the backdrop; the group photograph sits in front of
+           them as one cut-out, so the staggered heights still read behind the row. -->
+      <div class="hero__cast" data-reveal style="--delay:240ms">
+        <div class="cast__blocks" aria-hidden="true">
+          <span class="cast__block" style="--h:95%;--block:#3A3F73"></span>
+          <span class="cast__block" style="--h:77%;--block:#C6C9D6"></span>
+          <span class="cast__block" style="--h:82%;--block:#1D2050"></span>
+          <span class="cast__block" style="--h:75%;--block:#9DA2B8"></span>
+          <span class="cast__block" style="--h:100%;--block:#14163A"></span>
+          <span class="cast__block" style="--h:95%;--block:#DEE0E8"></span>
+        </div>
+
+        <img class="cast__group" src="assets/img/cast/hero-group.webp" alt="" width="1892" height="861" decoding="async">
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================ ABOUT ============================ -->
+  <!-- Mirrors the reference's second section: two-line margin label, bold
+       heading, semibold paragraph in a narrow measure, vertically stacked
+       pills, decorative element bleeding off the right.
+       The former standalone "Track record" section is merged in here — its
+       headline duplicated the marquee caption below, so the framing moved into
+       the paragraph and only the figures were kept. -->
+  <section class="section section--white about">
+    <div class="wrap">
+      <div class="labelled">
+        <p class="label" data-reveal>About<br>us</p>
+
+        <div style="width:100%">
+          <div class="about__top">
+          <div class="about__body" data-reveal-group>
+            <h2 class="about__title" data-reveal>About Yakin Hijrah Ventures</h2>
+
+            <p class="about__text" data-reveal>
+              Yakin Hijrah Ventures is a provider of professional business development and
+              training solutions, and a Shariah-compliant takaful intermediary. Established
+              in 2024 — on the back of careers spent inside Malaysia&rsquo;s largest insurers
+              and banks — we equip sales intermediaries, individuals and organisations with
+              the protection and the skills they need to compete.
+            </p>
+
+            <ul class="pills pills--stack" data-reveal>
+              <li class="pill">Customised to your requirements</li>
+              <li class="pill">Experienced team and trainers</li>
+              <li class="pill">Ethical and Shariah-compliant</li>
+            </ul>
+          </div>
+
+            <!-- Ring motif as the backdrop, cut-out portrait in front of it.
+                 Portrait is cropped just below the folded arms and sits flush
+                 to the stats rule below. -->
+            <div class="about__figure" data-reveal>
+              <img class="about__motif" src="assets/img/motif-rings.svg" alt="" aria-hidden="true"
+                   width="600" height="600">
+              <img class="about__person" src="assets/img/about-person.webp" alt=""
+                   width="900" height="1251" loading="lazy" decoding="async">
+            </div>
+          </div>
+
+          <div class="proof about__proof" data-reveal>
+            <div>
+              <p class="proof__fig">75<span style="font-size:.5em;vertical-align:super">+</span></p>
+              <p class="proof__label">Years of combined leadership across takaful, insurance and banking</p>
+            </div>
+            <div>
+              <p class="proof__fig">06</p>
+              <p class="proof__label">Professional development programmes</p>
+            </div>
+            <div>
+              <p class="proof__fig">04</p>
+              <p class="proof__label">Families of takaful solutions, personal through corporate</p>
+            </div>
+            <div>
+              <p class="proof__fig">05</p>
+              <p class="proof__label">Industries served, from SMEs to the public sector</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================= INSTITUTION STRIP ======================= -->
+  <!-- The reference's logo wall, in the same slot: straight after the About
+       block. Wordmarks, not brand logos — see the note in the stylesheet.
+       The set is duplicated so the strip bleeds past both edges; the copy is
+       hidden from assistive tech. -->
+  <section class="marks section--white">
+    <p class="marks__note" data-reveal>Our people built their careers at</p>
+
+    <!-- Four identical sets. The loop translates by exactly -25%, so it lands
+         one whole set along and the wrap is invisible. Four (not two) so that
+         after translating a full set there is still enough track to cover a
+         wide viewport with no gap. Only the first is read by assistive tech. -->
+    <div class="marks__strip">
+      <div class="marks__track">
+        <ul class="marks__set">
+          <li class="mark">Takaful Ikhlas</li>
+          <li class="mark">Maybank</li>
+          <li class="mark">Etiqa</li>
+          <li class="mark">Bank Islam</li>
+          <li class="mark">MCIS Zurich</li>
+        </ul>
+        <ul class="marks__set" aria-hidden="true">
+          <li class="mark">Takaful Ikhlas</li>
+          <li class="mark">Maybank</li>
+          <li class="mark">Etiqa</li>
+          <li class="mark">Bank Islam</li>
+          <li class="mark">MCIS Zurich</li>
+        </ul>
+        <ul class="marks__set" aria-hidden="true">
+          <li class="mark">Takaful Ikhlas</li>
+          <li class="mark">Maybank</li>
+          <li class="mark">Etiqa</li>
+          <li class="mark">Bank Islam</li>
+          <li class="mark">MCIS Zurich</li>
+        </ul>
+        <ul class="marks__set" aria-hidden="true">
+          <li class="mark">Takaful Ikhlas</li>
+          <li class="mark">Maybank</li>
+          <li class="mark">Etiqa</li>
+          <li class="mark">Bank Islam</li>
+          <li class="mark">MCIS Zurich</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================== WHAT WE DO ========================== -->
+  <!-- Tabs replaced by two sticky chapters. Tabs weighted both pillars equally
+       but hid one of them, so anyone who merely scrolled never saw four of the
+       ten offerings. Each pillar now has its own chapter with a sticky aside. -->
+  <section class="section section--dark">
+    <div class="wrap">
+      <div class="labelled">
+        <p class="label" data-reveal>What we<br>do</p>
+        <div style="width:100%">
+          <!-- No max-width: the line is short enough to sit on one line at the
+               full content width, which is the point. -->
+          <h2 data-reveal>
+            Two disciplines,
+            <span class="muted-clause">one commitment.</span>
+          </h2>
+          <p class="lede" data-reveal style="margin-top:1.1rem">
+            Protect the business, then grow the people inside it.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ------------------- Pillar 1: Training ------------------- -->
+  <section class="chapter section--white" id="training">
+    <div class="wrap">
+      <div class="chapter__grid">
+        <div class="chapter__aside">
+          <p class="label" data-reveal style="padding-top:0">01 &mdash; Training &amp; Development</p>
+          <h3 class="chapter__title" data-reveal>
+            Professional development, priced to actually reach the people who need it.
+          </h3>
+          <p class="chapter__text" data-reveal>
+            Tailored programmes for businesses and sales organisations — from leadership and
+            soft skills through to reviving sales teams that have gone quiet. Delivered in
+            person, virtually or as a hybrid, and built around your schedule rather than a
+            fixed public calendar.
+          </p>
+
+          <div class="chapter__progress" aria-hidden="true"><span class="chapter__bar"></span></div>
+
+          <div class="btn-row" data-reveal>
+            <a class="btn btn--solid" href="training.html">All six programmes</a>
+            <a class="btn btn--outline" href="contact.html">Request a proposal</a>
+          </div>
+        </div>
+
+          <div class="chapter__media" data-reveal>
+            <img src="assets/img/scene/training.jpg"
+                 alt="Participants taking notes during a working session"
+                 width="800" height="1280" loading="lazy" decoding="async">
+          </div>
+
+          <ol class="chapter__list">
+          <li class="item" data-reveal>
+            <span class="item__num">01</span>
+            <div>
+              <h4 class="item__title">Corporate Training</h4>
+              <p class="item__desc">Tailored programmes aimed at improving employee productivity, leadership, and industry-specific skills.</p>
+            </div>
+          </li>
+          <li class="item" data-reveal>
+            <span class="item__num">02</span>
+            <div>
+              <h4 class="item__title">Business Leaders Development</h4>
+              <p class="item__desc">Enhancing leadership and decision-making capability for the people whose judgement sets the ceiling for everyone below them.</p>
+            </div>
+          </li>
+          <li class="item" data-reveal>
+            <span class="item__num">03</span>
+            <div>
+              <h4 class="item__title">Soft Skills Development</h4>
+              <p class="item__desc">Communication, problem-solving, teamwork and customer service.</p>
+            </div>
+          </li>
+          <li class="item" data-reveal>
+            <span class="item__num">04</span>
+            <div>
+              <h4 class="item__title">High Performers Programme</h4>
+              <p class="item__desc">High-impact business development for sales teams looking to outrun the competition.</p>
+            </div>
+          </li>
+          <li class="item" data-reveal>
+            <span class="item__num">05</span>
+            <div>
+              <h4 class="item__title">Sales Reactivation</h4>
+              <p class="item__desc">A tailor-made programme for organisations to reactivate non-performing and dormant sales teams.</p>
+            </div>
+          </li>
+          <li class="item" data-reveal>
+            <span class="item__num">06</span>
+            <div>
+              <h4 class="item__title">Training &amp; Development for SMEs</h4>
+              <p class="item__desc">Tailor-made modules for SMEs, focusing on planning for Business Continuity (BCP).</p>
+            </div>
+          </li>
+          </ol>
+      </div>
+    </div>
+  </section>
+
+  <!-- ------------------- Pillar 2: Takaful ------------------- -->
+  <section class="chapter section--white" id="takaful">
+    <div class="wrap">
+      <div class="chapter__grid">
+        <div class="chapter__aside">
+          <p class="label" data-reveal style="padding-top:0">02 &mdash; Takaful Protection</p>
+          <h3 class="chapter__title" data-reveal>
+            Shariah-compliant cover for your business, your people and your family.
+          </h3>
+          <p class="chapter__text" data-reveal>
+            As an intermediary we work across operators to find cover that genuinely fits,
+            rather than selling whatever sits on one shelf — and we handle claims properly,
+            which is the point at which most people discover the difference.
+          </p>
+
+          <div class="chapter__progress" aria-hidden="true"><span class="chapter__bar"></span></div>
+
+          <div class="btn-row" data-reveal>
+            <a class="btn btn--solid" href="takaful.html">All solutions</a>
+            <a class="btn btn--outline" href="contact.html">Speak to an adviser</a>
+          </div>
+        </div>
+
+          <div class="chapter__media" data-reveal>
+            <img src="assets/img/scene/takaful.jpg"
+                 alt="Kuala Lumpur city centre at night"
+                 width="800" height="1280" loading="lazy" decoding="async">
+          </div>
+
+          <ol class="chapter__list">
+          <li class="item" data-reveal>
+            <span class="item__num">01</span>
+            <div>
+              <h4 class="item__title">Business Takaful</h4>
+              <p class="item__desc">Property, liability and marine — securing premises, assets, goods in transit and professional exposure.</p>
+            </div>
+          </li>
+          <li class="item" data-reveal>
+            <span class="item__num">02</span>
+            <div>
+              <h4 class="item__title">Employee Benefits</h4>
+              <p class="item__desc">Group and SME takaful plans covering life, health and medical for your workforce.</p>
+            </div>
+          </li>
+          <li class="item" data-reveal>
+            <span class="item__num">03</span>
+            <div>
+              <h4 class="item__title">Personal Takaful</h4>
+              <p class="item__desc">Motor, home and health cover for individuals and their families.</p>
+            </div>
+          </li>
+          <li class="item" data-reveal>
+            <span class="item__num">04</span>
+            <div>
+              <h4 class="item__title">Specialised</h4>
+              <p class="item__desc">Travel takaful covering delays, cancellations and medical emergencies abroad.</p>
+            </div>
+          </li>
+          </ol>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================ TRAINERS ============================ -->
+  <!-- Card deck. Names and titles are the real three from the profile PDF.
+       PLACEHOLDER PORTRAITS: the images are Unsplash stock standing in for real
+       headshots, so each card currently shows a stranger's face beside a named
+       person. That must not ship — replace all three before this goes public.
+       The horizontal slide (CSS sticky pin + GSAP translate, see main.js) only
+       engages when the cards overflow the viewport; with three of them it stays
+       a normal row on desktop and a native scroller on phones. -->
+  <section class="section--white trainers">
+    <div class="trainers__sticky">
+
+      <div class="wrap">
+        <div class="labelled">
+          <p class="label" data-reveal>Meet our<br>trainers</p>
+          <div style="width:100%">
+            <h2 data-reveal>The people who actually run the room.</h2>
+
+            <!-- Lede and the link share a row rather than stacking: the pinned
+                 state only has 100vh for the header block plus a card, so any
+                 height added here is height the cards lose. -->
+            <div class="trainers__intro">
+              <p class="lede" data-reveal>
+                Every programme is delivered by a practitioner who has done the job, not a
+                career facilitator working from a deck.
+              </p>
+
+              <!-- "See full profiles", not "view more people" — the team page
+                   carries the same three, with backgrounds and qualifications. -->
+              <a class="btn btn--outline" href="team.html" data-reveal>See full profiles</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="trainers__track">
+        <article class="tcard">
+          <img class="tcard__img" src="assets/img/trainers/trainer-2.jpg" alt="" width="700" height="933" decoding="async">
+          <div class="tcard__body">
+            <p class="tcard__name">Mohd Jafni Abd Jalil</p>
+            <p class="tcard__role">Founder &amp; Principal Consultant</p>
+          </div>
+        </article>
+
+        <article class="tcard">
+          <img class="tcard__img" src="assets/img/trainers/trainer-4.jpg" alt="" width="700" height="933" decoding="async">
+          <div class="tcard__body">
+            <p class="tcard__name">Mohd Yunos Mohd Sood</p>
+            <p class="tcard__role">Partner</p>
+          </div>
+        </article>
+
+        <article class="tcard">
+          <img class="tcard__img" src="assets/img/trainers/trainer-6.jpg" alt="" width="700" height="933" decoding="async">
+          <div class="tcard__body">
+            <p class="tcard__name">Lockman bin Hj Mohammad Din</p>
+            <p class="tcard__role">Senior Representative &mdash; Sarawak Region</p>
+          </div>
+        </article>      </div>
+
+    </div>
+  </section>
+
+  <!-- ============================= WHY YHV ============================= -->
+  <section class="section">
+    <div class="wrap">
+      <div class="labelled">
+        <p class="label" data-reveal>Why YHV</p>
+        <div style="width:100%">
+          <h2 data-reveal style="margin-bottom:clamp(2rem,4vw,2.75rem)">
+            What you get that you wouldn&rsquo;t get elsewhere.
+          </h2>
+
+          <div class="grid grid--3" data-reveal-group>
+            <div class="card" data-reveal>
+              <p class="card__num">01</p>
+              <h3 class="card__title">Customised solutions</h3>
+              <p class="card__body">We prioritise our clients&rsquo; interests and shape what we offer around individual requirements — not a fixed catalogue.</p>
+            </div>
+            <div class="card" data-reveal>
+              <p class="card__num">02</p>
+              <h3 class="card__title">Experienced team and trainers</h3>
+              <p class="card__body">Decades inside the takaful industry, so the advice and the guidance come from people who have done the job.</p>
+            </div>
+            <div class="card" data-reveal>
+              <p class="card__num">03</p>
+              <h3 class="card__title">Results oriented</h3>
+              <p class="card__body">Committed to measurable outcomes, so participants leave with skills that actually shift performance.</p>
+            </div>
+            <div class="card" data-reveal>
+              <p class="card__num">04</p>
+              <h3 class="card__title">Flexible delivery</h3>
+              <p class="card__body">In-person, virtual and hybrid formats to fit around your schedule and your preferences.</p>
+            </div>
+            <div class="card" data-reveal>
+              <p class="card__num">05</p>
+              <h3 class="card__title">Fast, efficient claims</h3>
+              <p class="card__body">A hassle-free claims experience, with prompt assessment and settlement procedures when it counts.</p>
+            </div>
+            <div class="card" data-reveal>
+              <p class="card__num">06</p>
+              <h3 class="card__title">Strong partnerships</h3>
+              <p class="card__body">Collaborations with established takaful operators, widening what we can put in front of you.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================== INDUSTRIES =========================== -->
+  <!-- Set as one oversized typographic run rather than five hairline rows. Kept
+       as a list for semantics; the separators are decorative and hidden from
+       assistive tech. Items stagger in individually on scroll. -->
+  <section class="section section--white industries">
+    <div class="wrap">
+      <div class="labelled">
+        <p class="label" data-reveal>Industries<br>we serve</p>
+
+        <ul class="inds">
+          <li class="inds__item" data-reveal>Finance &amp; Banking</li>
+          <li class="inds__item" data-reveal>Insurance &amp; Takaful</li>
+          <li class="inds__item" data-reveal>Retail &amp; E-commerce</li>
+          <li class="inds__item" data-reveal>Government &amp; Public Sector</li>
+          <li class="inds__item" data-reveal>Small &amp; Medium Enterprises</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================= MARKETPLACE TEASER ========================= -->
+  <!-- band--next: a lighter, bluer navy than the vision band, so the page's two
+       dark anchors read as different moments rather than a repeat. -->
+  <section class="section band band--next">
+    <div class="wrap">
+      <div class="labelled">
+        <p class="label" data-reveal>What&rsquo;s next</p>
+        <div class="stack" data-reveal>
+          <h2 class="band__title">
+            A learning platform where every business can reach the training it needs.
+          </h2>
+          <p class="lede" style="max-width:52ch">
+            Affordability is only half the problem — access is the other half. We&rsquo;re building
+            an online marketplace to put structured, practical training within reach of any
+            organisation, whatever its size or wherever it sits.
+          </p>
+          <ul class="pills">
+            <li class="pill">In development</li>
+            <li class="pill">Online &amp; on-demand</li>
+            <li class="pill">Built for smaller organisations</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+</main>
+
+<footer class="footer">
+  <div class="wrap">
+    <div class="footer__cta">
+      <div class="footer__cta-copy">
+        <h2 class="footer__cta-title">Let&rsquo;s talk about what your business actually needs.</h2>
+        <p class="footer__cta-text">
+          Tell us the size of your team and what you&rsquo;re trying to solve. We&rsquo;ll come back
+          with a proposal — no cost, no obligation.
+        </p>
+      </div>
+
+      <div class="btn-row">
+        <a class="btn btn--light btn--lg" href="contact.html">Request a proposal</a>
+      </div>
+    </div>
+    <div class="footer__top">
+      <div class="footer__brand">
+        <a class="brand" href="index.html" style="margin-bottom:1.25rem">
+          <img class="brand__mark" src="assets/img/yhv-mark.svg" alt="" width="36" height="36">
+          <span class="brand__name" style="color:var(--white)">Yakin Hijrah<span style="color:var(--navy-300)">Ventures</span></span>
+        </a>
+        <p style="font-size:var(--t-small);max-width:34ch">
+          Shariah-compliant takaful protection and professional training, brought within
+          reach of Malaysian businesses.
+        </p>
+        <p style="font-size:var(--t-small);margin-top:1rem;color:var(--navy-400)">
+          Registration 3634792-M
+        </p>
+      </div>
+
+      <div>
+        <p class="footer__heading">Explore</p>
+        <ul class="footer__list">
+          <li><a href="about.html">About</a></li>
+          <li><a href="takaful.html">Takaful Protection</a></li>
+          <li><a href="training.html">Training &amp; Development</a></li>
+          <li><a href="team.html">Our Team</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <p class="footer__heading">Get in touch</p>
+        <ul class="footer__list">
+          <li><a href="mailto:yakinhijrahventures@gmail.com">yakinhijrahventures@gmail.com</a></li>
+          <li><a href="tel:+60193247203">+60 19 324 7203</a> <span style="color:var(--navy-400)">&mdash; Jafni</span></li>
+          <li><a href="tel:+60192810104">+60 19 281 0104</a> <span style="color:var(--navy-400)">&mdash; Yunos</span></li>
+          <li><a href="tel:+60128831488">+60 12 883 1488</a> <span style="color:var(--navy-400)">&mdash; Lockman</span></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer__bottom">
+      <p style="margin:0">&copy; <span data-year>2026</span> Yakin Hijrah Ventures. All rights reserved.</p>
+      <p style="margin:0">Kuala Lumpur &middot; Sarawak, Malaysia</p>
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js" defer></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js" defer></script>
+<script src="assets/js/main.js?v=44" defer></script>
+</body>
+</html>

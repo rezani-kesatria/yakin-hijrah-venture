@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" role="img" aria-label="">
+  <!-- Backdrop for the About portrait. Concentric rings echo the circular YHV
+       mark. Uniform weight throughout: the heavier accent arcs this previously
+       carried read as a stray dark line behind the cut-out figure.
+       No filled centre either — that reads as a bullseye. -->
+  <g fill="none" stroke="#14163A">
+    <circle cx="300" cy="300" r="132" stroke-opacity="0.13"  stroke-width="1.1"/>
+    <circle cx="300" cy="300" r="180" stroke-opacity="0.115" stroke-width="1.1"/>
+    <circle cx="300" cy="300" r="228" stroke-opacity="0.09"  stroke-width="1"/>
+    <circle cx="300" cy="300" r="276" stroke-opacity="0.07"  stroke-width="1"/>
+  </g>
+</svg>

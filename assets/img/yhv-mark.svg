@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" role="img" aria-label="Yakin Hijrah Ventures">
+  <!-- Placeholder interpretation of the YHV mark. Swap for the supplied
+       vector logo when available. -->
+  <circle cx="50" cy="50" r="50" fill="#14163A"/>
+  <g fill="none" stroke="#FFFFFF" stroke-width="5.4" stroke-linecap="square" stroke-linejoin="miter">
+    <!-- Y -->
+    <path d="M18 37 L26.5 50 L35 37"/>
+    <path d="M26.5 50 L26.5 63"/>
+    <!-- H -->
+    <path d="M42 37 L42 63"/>
+    <path d="M55 37 L55 63"/>
+    <path d="M42 50 L55 50"/>
+    <!-- V -->
+    <path d="M62 37 L71 63 L80 37"/>
+  </g>
+</svg>
