@@ -1,0 +1,65 @@
+name: Deploy to GitHub Pages
+
+# The site is plain HTML, CSS and JS with no build step, so the repository is
+# uploaded as-is. Runs on every push to main, and can be triggered by hand.
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+# Least privilege: read the tree, write a Pages deployment, and mint the OIDC
+# token deploy-pages exchanges for its credentials.
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# One deployment at a time. Queued rather than cancelled, so a run that is
+# already publishing is never interrupted half-way.
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
+    steps:
+      - name: Check out the repository
+        uses: actions/checkout@v4
+
+      - name: Confirm every referenced local asset exists
+        # Cheap guard against a broken image or stylesheet reaching the client
+        # preview. Only local paths are checked; CDN and font URLs are skipped.
+        run: |
+          missing=0
+          for page in *.html; do
+            refs=$(grep -oE '(src|href)="[^"#:]+\.(css|js|png|jpe?g|webp|svg|ico)[^"]*"' "$page" \
+                   | sed -E 's/^(src|href)="//; s/"$//; s/\?.*$//')
+            for ref in $refs; do
+              if [ ! -f "$ref" ]; then
+                echo "::error file=$page::missing asset $ref"
+                missing=$((missing + 1))
+              fi
+            done
+          done
+          if [ "$missing" -gt 0 ]; then
+            echo "$missing missing asset reference(s)"
+            exit 1
+          fi
+          echo "All local asset references resolve."
+
+      - name: Configure Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload the site
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: .
+
+      - name: Deploy
+        id: deployment
+        uses: actions/deploy-pages@v4
