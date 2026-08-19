@@ -9,7 +9,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@400..700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/css/style.css?v=47">
+<link rel="stylesheet" href="assets/css/style.css?v=60">
 <script>
 (function (d) {
   d.documentElement.classList.add("js");
@@ -67,15 +67,29 @@
           obligation to proceed.
       </p>
       </div>
-
-      <div class="figure page-hero__banner" data-reveal style="--ar:21/9;--pos:center 45%">
-        <img src="assets/img/scene/hero-contact.jpg" alt="A notebook, pen and phone on a desk" width="1800" height="771" decoding="async">
-      </div>
     </div>
   </section>
 
   <section class="section section--white" style="padding-top:clamp(2rem,4vw,3rem)">
     <div class="wrap">
+      <!-- PLACEHOLDER LOCATION: there is no street address anywhere in the
+           profile or the site, so this is centred on Kuala Lumpur generally
+           rather than pinning an office that has not been given. Swap the q=
+           value for the real address when there is one. -->
+      <div class="contact-map" data-reveal>
+        <iframe
+          src="https://www.google.com/maps?q=Kuala%20Lumpur%2C%20Malaysia&output=embed"
+          title="Map showing Kuala Lumpur, Malaysia"
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          allowfullscreen></iframe>
+      </div>
+
+      <p class="contact-map__note" data-reveal>
+        Based in Kuala Lumpur, with a senior representative in Kuching — we work across
+        the East Coast, Southern and Sarawak regions as readily as the Klang Valley.
+      </p>
+
       <div class="contact-layout">
 
         <!-- ------------------------- Form ------------------------- -->
@@ -188,39 +202,6 @@
        the hairline rows this page used to carry. Deliberately NOT section--white
        like the homepage copy: the block above is already white, so borrowing
        that too would erase the boundary between them. -->
-  <section class="section industries">
-    <div class="wrap">
-      <div class="labelled">
-        <p class="label" data-reveal>Industries<br>we serve</p>
-
-        <ul class="inds">
-          <li class="inds__item" data-reveal>Finance &amp; Banking</li>
-          <li class="inds__item" data-reveal>Insurance &amp; Takaful</li>
-          <li class="inds__item" data-reveal>Retail &amp; E-commerce</li>
-          <li class="inds__item" data-reveal>Government &amp; Public Sector</li>
-          <li class="inds__item" data-reveal>Small &amp; Medium Enterprises</li>
-        </ul>
-      </div>
-    </div>
-  </section>
-
-  <section class="section band">
-    <div class="wrap">
-      <div class="labelled">
-        <p class="label" data-reveal>Coverage</p>
-        <div class="stack" data-reveal>
-          <h2 class="band__title">
-            Peninsular Malaysia and Sarawak.
-          </h2>
-          <p class="lede" style="max-width:50ch">
-            With a senior representative based in Kuching, we work across the East Coast,
-            Southern and Sarawak regions as readily as the Klang Valley.
-          </p>
-        </div>
-      </div>
-    </div>
-  </section>
-
 </main>
 
 <footer class="footer">
@@ -284,6 +265,6 @@
 
 <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js" defer></script>
 <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js" defer></script>
-<script src="assets/js/main.js?v=44" defer></script>
+<script src="assets/js/main.js?v=49" defer></script>
 </body>
 </html>

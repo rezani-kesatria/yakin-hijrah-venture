@@ -9,7 +9,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@400..700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/css/style.css?v=47">
+<link rel="stylesheet" href="assets/css/style.css?v=60">
 <script>
 (function (d) {
   d.documentElement.classList.add("js");
@@ -70,7 +70,7 @@
       </div>
 
       <div class="figure page-hero__banner" data-reveal style="--ar:21/9;--pos:center 55%">
-        <img src="assets/img/scene/hero-takaful.jpg" alt="The Kuala Lumpur skyline in daylight" width="1800" height="771" decoding="async">
+        <img src="assets/img/scene/hero-takaful.jpg" alt="The Kuala Lumpur skyline at dusk" width="1800" height="771" decoding="async">
       </div>
     </div>
   </section>
@@ -96,17 +96,35 @@
               We handle claims with prompt assessment and settlement, so the protection you paid
               for behaves the way you were told it would.
             </p>
-            <ul class="pills" style="margin-top:0.5rem">
-              <li class="pill">Shariah-compliant</li>
-              <li class="pill">Multiple operators</li>
-              <li class="pill">Fast, efficient claims</li>
-              <li class="pill">Customised to your requirements</li>
-            </ul>
           </div>
 
-          <div data-reveal>
-            <div class="figure" style="--ar:3/2">
-              <img src="assets/img/scene/takaful-how.jpg" alt="Two people signing a contract across a table" width="1400" height="788" loading="lazy" decoding="async">
+          <div class="grid tile-grid" data-reveal-group>
+            <div class="card card--tile" data-reveal style="--tile:var(--navy-800)">
+              <svg class="card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M12 3l7 3v6c0 4.4-3 8.2-7 9-4-.8-7-4.6-7-9V6l7-3z"/><path d="M9.3 12.1l1.9 1.9 3.5-3.7"/>
+              </svg>
+              <h3 class="card__title">Shariah-compliant</h3>
+            </div>
+
+            <div class="card card--tile" data-reveal style="--tile:var(--navy-600)">
+              <svg class="card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <circle cx="12" cy="5.5" r="2.4"/><circle cx="5.5" cy="17" r="2.4"/><circle cx="18.5" cy="17" r="2.4"/><path d="M10.4 7.4L7.1 14.9M13.6 7.4l3.3 7.5M8 17.6h8"/>
+              </svg>
+              <h3 class="card__title">Multiple operators</h3>
+            </div>
+
+            <div class="card card--tile" data-reveal style="--tile:var(--navy-700)">
+              <svg class="card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M13.2 2.5L4.8 13.4h5.4l-1.4 8.1 8.4-10.9h-5.4l1.4-8.1z"/>
+              </svg>
+              <h3 class="card__title">Fast, efficient claims</h3>
+            </div>
+
+            <div class="card card--tile" data-reveal style="--tile:var(--navy-900)">
+              <svg class="card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M4 7h9M17 7h3M4 17h3M11 17h9"/><circle cx="15" cy="7" r="2.2"/><circle cx="9" cy="17" r="2.2"/>
+              </svg>
+              <h3 class="card__title">Customised to your requirements</h3>
             </div>
           </div>
         </div>
@@ -123,51 +141,47 @@
           <!-- Each of the four solution sections now opens with a photograph of
                what is actually being covered, and they alternate side down the
                page so four in a row don't read as one repeated template. -->
-          <div class="split" style="margin-bottom:clamp(2rem,4vw,2.75rem)">
+          <div class="split">
             <div>
               <h2 data-reveal style="margin-bottom:0.9rem">Business Takaful Solutions</h2>
               <p class="lede" data-reveal style="margin-bottom:0">
                 Protecting the premises, assets and professional exposure that your business runs on.
               </p>
+
+              <div class="rows" data-reveal style="margin-top:clamp(1.5rem,3vw,2rem)">
+                <div class="row">
+                  <p class="row__term">Property Takaful</p>
+                  <p class="row__desc">
+                    Secures business premises and assets against risks such as fire, burglary
+                    and other liabilities.
+                  </p>
+                </div>
+
+                <div class="row">
+                  <p class="row__term">Liability Takaful</p>
+                  <p class="row__desc">
+                    Protection against legal liabilities arising from professional negligence
+                    or errors.
+                  </p>
+                </div>
+
+                <div class="row">
+                  <p class="row__term">Marine Takaful</p>
+                  <p class="row__desc">
+                    Coverage for goods in transit, protecting against loss or damage during
+                    transportation.
+                  </p>
+                </div>
+              </div>
             </div>
 
             <div data-reveal>
               <div class="figure" style="--ar:3/2">
-                <!-- Containers, not another warehouse interior: 02 below is already
-                     a warehouse, and this section covers marine cargo as well as
-                     premises, so the port reads as the wider business exposure. -->
-                <img src="assets/img/scene/takaful-business.jpg" alt="Stacked intermodal shipping containers at a port" width="1400" height="913" loading="lazy" decoding="async">
+                <img src="assets/img/scene/takaful-business.jpg" alt="A small business premises with its shutters open, stock inside and a delivery van at the kerb" width="1500" height="1000" loading="lazy" decoding="async">
               </div>
             </div>
           </div>
 
-          <div class="grid grid--3" data-reveal-group>
-            <div class="card" data-reveal>
-              <svg class="card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true">
-                <path d="M3 21h18M5 21V7l7-4 7 4v14M9 21v-5h6v5M9 11h.01M15 11h.01"/>
-              </svg>
-              <h3 class="card__title">Property Takaful</h3>
-              <p class="card__body">Secures business premises and assets against risks such as fire, burglary and other liabilities.</p>
-            </div>
-
-            <div class="card" data-reveal>
-              <svg class="card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true">
-                <path d="M12 3l7 3v6c0 4.4-3 8.2-7 9-4-.8-7-4.6-7-9V6l7-3z"/>
-                <path d="M9.5 12.2l1.8 1.8 3.4-3.6"/>
-              </svg>
-              <h3 class="card__title">Liability Takaful</h3>
-              <p class="card__body">Protection against legal liabilities arising from professional negligence or errors.</p>
-            </div>
-
-            <div class="card" data-reveal>
-              <svg class="card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true">
-                <path d="M3 18c1.5 0 1.5 1.5 3 1.5s1.5-1.5 3-1.5 1.5 1.5 3 1.5 1.5-1.5 3-1.5 1.5 1.5 3 1.5 1.5-1.5 3-1.5"/>
-                <path d="M5 15V9h14v6M12 9V5M8 5h8"/>
-              </svg>
-              <h3 class="card__title">Marine Takaful</h3>
-              <p class="card__body">Coverage for goods in transit, protecting against loss or damage during transportation.</p>
-            </div>
-          </div>
         </div>
       </div>
     </div>
@@ -178,7 +192,7 @@
       <div class="labelled">
         <p class="label" data-reveal>02 &mdash; Employee benefits</p>
         <div style="width:100%">
-          <div class="split split--flip" style="margin-bottom:clamp(2rem,4vw,2.75rem)">
+          <div class="split split--flip">
             <div>
               <h2 data-reveal style="margin-bottom:0.9rem">
                 Protecting the people who make the business work
@@ -187,43 +201,35 @@
                 Group cover is one of the few benefits a smaller employer can offer that genuinely
                 competes with a larger one.
               </p>
+
+              <div class="rows" data-reveal style="margin-top:clamp(1.5rem,3vw,2rem)">
+                <div class="row">
+                  <p class="row__term">Group Takaful Coverage</p>
+                  <p class="row__desc">
+                    Tailor-made, comprehensive group plans for businesses aiming to give employees
+                    robust protection. Plans include life coverage alongside health and medical
+                    benefits — fostering a supportive and motivating work environment.
+                  </p>
+                </div>
+
+                <div class="row">
+                  <p class="row__term">SME Takaful Coverage</p>
+                  <p class="row__desc">
+                    Packaged, comprehensive group plans designed specifically for SME businesses —
+                    suitable coverage sized for mid-size organisations, without the overhead of a
+                    bespoke corporate scheme.
+                  </p>
+                </div>
+              </div>
             </div>
 
             <div data-reveal>
               <div class="figure" style="--ar:3/2">
-                <img src="assets/img/scene/takaful-employees.jpg" alt="An employee at work stocking shelves" width="1400" height="933" loading="lazy" decoding="async">
+                <img src="assets/img/scene/takaful-employees.jpg" alt="A small team talking together in their workplace" width="1500" height="1000" loading="lazy" decoding="async">
               </div>
             </div>
           </div>
 
-          <div class="grid grid--2" data-reveal-group>
-            <div class="card" data-reveal>
-              <svg class="card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true">
-                <circle cx="9" cy="8" r="3.2"/>
-                <path d="M3 20c0-3.3 2.7-6 6-6s6 2.7 6 6"/>
-                <path d="M16 5.2a3.2 3.2 0 010 5.9M18 14.4c1.8.9 3 2.7 3 4.9"/>
-              </svg>
-              <h3 class="card__title">Group Takaful Coverage</h3>
-              <p class="card__body">
-                Tailor-made, comprehensive group plans for businesses aiming to give employees
-                robust protection. Plans include life coverage alongside health and medical
-                benefits — fostering a supportive and motivating work environment.
-              </p>
-            </div>
-
-            <div class="card" data-reveal>
-              <svg class="card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true">
-                <path d="M3 9l1.5-5h15L21 9M3 9h18M3 9v11h18V9"/>
-                <path d="M9 20v-6h6v6"/>
-              </svg>
-              <h3 class="card__title">SME Takaful Coverage</h3>
-              <p class="card__body">
-                Packaged, comprehensive group plans designed specifically for SME businesses —
-                suitable coverage sized for mid-size organisations, without the overhead of a
-                bespoke corporate scheme.
-              </p>
-            </div>
-          </div>
         </div>
       </div>
     </div>
@@ -234,48 +240,45 @@
       <div class="labelled">
         <p class="label" data-reveal>03 &mdash; Personal</p>
         <div style="width:100%">
-          <div class="split" style="margin-bottom:clamp(2rem,4vw,2.75rem)">
+          <div class="split">
             <div>
               <h2 data-reveal style="margin-bottom:0.9rem">Personal Takaful Solutions</h2>
               <p class="lede" data-reveal style="margin-bottom:0">
                 Cover for you and your family, on the same Shariah-compliant basis.
               </p>
+
+              <div class="rows" data-reveal style="margin-top:clamp(1.5rem,3vw,2rem)">
+                <div class="row">
+                  <p class="row__term">Motor Takaful</p>
+                  <p class="row__desc">
+                    Protects your vehicle against damage and theft, for peace of mind on the road.
+                  </p>
+                </div>
+
+                <div class="row">
+                  <p class="row__term">Home Takaful</p>
+                  <p class="row__desc">
+                    Safeguards your home and its contents from fire, theft and natural disasters.
+                  </p>
+                </div>
+
+                <div class="row">
+                  <p class="row__term">Health Takaful</p>
+                  <p class="row__desc">
+                    Coverage for medical expenses, supporting your well-being and your
+                    family&rsquo;s.
+                  </p>
+                </div>
+              </div>
             </div>
 
             <div data-reveal>
               <div class="figure" style="--ar:3/2">
-                <img src="assets/img/scene/takaful-personal.jpg" alt="Houses in a residential neighbourhood seen from above" width="1400" height="1050" loading="lazy" decoding="async">
+                <img src="assets/img/scene/takaful-personal.jpg" alt="A Malaysian family outside their home, with the family car in the porch" width="1500" height="1000" loading="lazy" decoding="async">
               </div>
             </div>
           </div>
 
-          <div class="grid grid--3" data-reveal-group>
-            <div class="card" data-reveal>
-              <svg class="card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true">
-                <path d="M4 16v2.5M20 16v2.5M3 16h18v-3.2l-1.8-4.4A2 2 0 0017.3 7H6.7a2 2 0 00-1.9 1.4L3 12.8V16z"/>
-                <circle cx="7.5" cy="13.5" r="1"/><circle cx="16.5" cy="13.5" r="1"/>
-              </svg>
-              <h3 class="card__title">Motor Takaful</h3>
-              <p class="card__body">Protects your vehicle against damage and theft, for peace of mind on the road.</p>
-            </div>
-
-            <div class="card" data-reveal>
-              <svg class="card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true">
-                <path d="M3 10.5L12 3l9 7.5M5.5 9.2V21h13V9.2"/>
-                <path d="M10 21v-6h4v6"/>
-              </svg>
-              <h3 class="card__title">Home Takaful</h3>
-              <p class="card__body">Safeguards your home and its contents from fire, theft and natural disasters.</p>
-            </div>
-
-            <div class="card" data-reveal>
-              <svg class="card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true">
-                <path d="M12 20.5S3.8 15.4 3.8 9.9A4.4 4.4 0 0112 7.4a4.4 4.4 0 018.2 2.5c0 5.5-8.2 10.6-8.2 10.6z"/>
-              </svg>
-              <h3 class="card__title">Health Takaful</h3>
-              <p class="card__body">Coverage for medical expenses, supporting your well-being and your family&rsquo;s.</p>
-            </div>
-          </div>
         </div>
       </div>
     </div>
@@ -302,7 +305,7 @@
 
             <div data-reveal>
               <div class="figure" style="--ar:3/2">
-                <img src="assets/img/scene/takaful-travel.jpg" alt="A traveller waiting at an airport gate with luggage" width="1400" height="933" loading="lazy" decoding="async">
+                <img src="assets/img/scene/takaful-travel.jpg" alt="A traveller with a suitcase walking through an airport terminal" width="1500" height="1000" loading="lazy" decoding="async">
               </div>
             </div>
           </div>
@@ -374,6 +377,6 @@
 
 <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js" defer></script>
 <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js" defer></script>
-<script src="assets/js/main.js?v=44" defer></script>
+<script src="assets/js/main.js?v=49" defer></script>
 </body>
 </html>
