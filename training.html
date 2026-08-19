@@ -9,7 +9,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@400..700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/css/style.css?v=60">
+<link rel="stylesheet" href="assets/css/style.css?v=69">
 <script>
 (function (d) {
   d.documentElement.classList.add("js");
@@ -69,8 +69,8 @@
       </p>
       </div>
 
-      <div class="figure page-hero__banner" data-reveal style="--ar:21/9;--pos:center 72%">
-        <img src="assets/img/scene/hero-training.jpg" alt="An audience seated at a professional seminar" width="1800" height="771" decoding="async">
+      <div class="figure page-hero__banner" data-reveal style="--ar:21/9;--pos:center 42%">
+        <img src="assets/img/scene/hero-training.jpg" alt="A facilitator leading a training session for a small group around a meeting table" width="1800" height="1206" decoding="async">
       </div>
     </div>
   </section>
@@ -81,15 +81,15 @@
       <div class="labelled">
         <p class="label" data-reveal>Why we exist</p>
         <div style="width:100%">
-          <h2 data-reveal>
-            You shouldn&rsquo;t need an HR department
-            <span class="muted-clause">to develop your people properly.</span>
-          </h2>
-
-          <!-- 158 words of unbroken prose here previously. The argument now runs
-               beside a picture of the thing being argued for. -->
-          <div class="split" style="margin-top:2rem">
+          <!-- Heading sits with the copy in one column so the media column can run
+               the full height of the row. Previously the heading spanned the full
+               width, which left dead space beside it and under the shorter column. -->
+          <div class="split split--fill">
             <div class="stack" data-reveal>
+              <h2>
+                You shouldn&rsquo;t need an HR department
+                <span class="muted-clause">to develop your people properly.</span>
+              </h2>
               <p>
                 Good training has quietly become a large-company benefit. Programmes are built
                 around enterprise budgets, minimum headcounts and fixed public calendars — none
@@ -102,10 +102,8 @@
               </p>
             </div>
 
-            <div data-reveal>
-              <div class="figure" style="--ar:4/3">
-                <img src="assets/img/scene/training-why.jpg" alt="A group seated at desks during a training session" width="1400" height="1050" loading="lazy" decoding="async">
-              </div>
+            <div class="figure figure--fill" data-reveal>
+              <img src="assets/img/scene/training-why.jpg" alt="A small team working through a session together around a table" width="1400" height="1050" loading="lazy" decoding="async">
             </div>
           </div>
 
@@ -134,6 +132,28 @@
               </p>
             </div>
           </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section band" id="sales-reactivation">
+    <div class="wrap">
+      <div class="labelled">
+        <p class="label" data-reveal>Our speciality</p>
+        <div class="stack" data-reveal>
+          <h2 class="band__title">
+            Reactivating the sales people everyone else has written off.
+          </h2>
+          <p class="lede" style="max-width:54ch">
+            Most agencies recruit their way out of a performance problem. It is almost always
+            cheaper — and considerably faster — to restart the people already on your books.
+          </p>
+          <p class="lede" style="max-width:54ch">
+            Our Sales Reactivation programme is built specifically for organisations carrying
+            non-performing or dormant sales teams: diagnosing why production stopped, rebuilding
+            confidence and habits, and putting a measurable structure around the return.
+          </p>
         </div>
       </div>
     </div>
@@ -214,105 +234,61 @@
             Each one is tailored before it is delivered — the outline below is the starting
             point of a conversation, not a fixed syllabus.
           </p>
+            <div class="grid grid--3" data-reveal-group>
+            <div class="card card--solid" data-reveal style="--tile:var(--navy-800)">
+              <svg class="card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M3 21h18M5 21V8.5l7-4.5 7 4.5V21"/><path d="M9.5 21v-5.5h5V21M9.5 11.5h5"/>
+              </svg>
+              <h3 class="card__title">Corporate Training</h3>
+              <p class="card__body">Tailored programmes for businesses aimed at improving employee productivity, leadership, and industry-specific skills.</p>
+            </div>
 
-          <div class="rows" data-reveal-group>
-            <div class="row" data-reveal>
-              <p class="row__term">Corporate Training</p>
-              <p class="row__desc">
-                Tailored programmes for businesses aimed at improving employee productivity,
-                leadership, and industry-specific skills.
-              </p>
+            <div class="card card--solid" data-reveal style="--tile:var(--navy-700)">
+              <svg class="card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M4 20V13M12 20V6M20 20v-9"/><circle cx="4" cy="10.5" r="1.6"/><circle cx="12" cy="3.5" r="1.6"/><circle cx="20" cy="8.5" r="1.6"/>
+              </svg>
+              <h3 class="card__title">Business Leaders Development</h3>
+              <p class="card__body">Developed to enhance leadership and decision-making skills for business leaders — the people whose judgement sets the ceiling for everyone below them.</p>
             </div>
-            <div class="row" data-reveal>
-              <p class="row__term">Business Leaders Development</p>
-              <p class="row__desc">
-                Developed to enhance leadership and decision-making skills for business leaders
-                — the people whose judgement sets the ceiling for everyone below them.
-              </p>
+
+            <div class="card card--solid" data-reveal style="--tile:var(--navy-600)">
+              <svg class="card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M3.5 6.5h11a2 2 0 012 2v4a2 2 0 01-2 2h-6l-4 3v-3h-1a2 2 0 01-2-2v-4a2 2 0 012-2z"/><path d="M17.5 10h3v6a2 2 0 01-2 2h-1v2.5l-3-2.5"/>
+              </svg>
+              <h3 class="card__title">Soft Skills Development</h3>
+              <p class="card__body">Programmes to improve communication, problem-solving, teamwork and customer service.</p>
             </div>
-            <div class="row" data-reveal>
-              <p class="row__term">Soft Skills Development</p>
-              <p class="row__desc">
-                Programmes to improve communication, problem-solving, teamwork and customer
-                service.
-              </p>
+
+            <div class="card card--solid" data-reveal style="--tile:var(--navy-600)">
+              <svg class="card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M4 18.5L9 12l4 3 7-9"/><path d="M15.5 3.5h5v5"/>
+              </svg>
+              <h3 class="card__title">High Performers Development</h3>
+              <p class="card__body">A high-impact business development programme for sales teams, aimed at increasing productivity to outrun the competition.</p>
             </div>
-            <div class="row" data-reveal>
-              <p class="row__term">High Performers Development</p>
-              <p class="row__desc">
-                A high-impact business development programme for sales teams, aimed at
-                increasing productivity to outrun the competition.
-              </p>
+
+            <div class="card card--solid" data-reveal style="--tile:var(--navy-800)">
+              <svg class="card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M20 12a8 8 0 11-2.6-5.9"/><path d="M20 3.5V8h-4.5"/>
+              </svg>
+              <h3 class="card__title"><a href="#sales-reactivation">Sales Reactivation</a></h3>
+              <p class="card__body">A specially tailor-made programme for organisations to reactivate their non-performing and dormant sales teams.</p>
             </div>
-            <div class="row" data-reveal>
-              <p class="row__term">Sales Reactivation</p>
-              <p class="row__desc">
-                A specially tailor-made programme for organisations to reactivate their
-                non-performing and dormant sales teams.
-              </p>
+
+            <div class="card card--solid" data-reveal style="--tile:var(--navy-700)">
+              <svg class="card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M4 8.5h6v12H4zM14 3.5h6v17h-6z"/><path d="M6.2 12h1.6M6.2 15.5h1.6M16.2 7h1.6M16.2 10.5h1.6M16.2 14h1.6"/>
+              </svg>
+              <h3 class="card__title">Training &amp; Development for SMEs</h3>
+              <p class="card__body">Tailor-made modules for SMEs, focusing on planning for Business Continuity (BCP).</p>
             </div>
-            <div class="row" data-reveal>
-              <p class="row__term">Training &amp; Development for SMEs</p>
-              <p class="row__desc">
-                Tailor-made modules for SMEs, focusing on planning for Business Continuity (BCP).
-              </p>
             </div>
-          </div>
         </div>
       </div>
     </div>
   </section>
 
   <!-- The genuinely differentiated capability — give it its own moment. -->
-  <section class="section band">
-    <div class="wrap">
-      <div class="labelled">
-        <p class="label" data-reveal>Our speciality</p>
-        <div class="stack" data-reveal>
-          <h2 class="band__title">
-            Reactivating the sales people everyone else has written off.
-          </h2>
-          <p class="lede" style="max-width:54ch">
-            Most agencies recruit their way out of a performance problem. It is almost always
-            cheaper — and considerably faster — to restart the people already on your books.
-          </p>
-          <p class="lede" style="max-width:54ch">
-            Our Sales Reactivation programme is built specifically for organisations carrying
-            non-performing or dormant sales teams: diagnosing why production stopped, rebuilding
-            confidence and habits, and putting a measurable structure around the return.
-          </p>
-          <div class="btn-row">
-            <a class="btn btn--light" href="contact.html">Discuss your sales team</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="section">
-    <div class="wrap">
-      <div class="labelled">
-        <p class="label" data-reveal>What&rsquo;s next</p>
-        <div class="stack" data-reveal>
-          <h2>
-            A learning platform
-            <span class="muted-clause">where every business can reach the training it needs.</span>
-          </h2>
-          <p class="lede">
-            Affordability solves half the problem; access solves the other half. We&rsquo;re
-            building an online marketplace to put structured, practical training in front of
-            any organisation — whatever its size, wherever it operates.
-          </p>
-          <ul class="pills">
-            <li class="pill">In development</li>
-            <li class="pill">Online &amp; on-demand</li>
-            <li class="pill">Built for smaller organisations</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </section>
-
 </main>
 
 <footer class="footer">
